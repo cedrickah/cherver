@@ -11,7 +11,7 @@ Basic example showing how to run a simple http server using cherver library.
 From the root directory of the project run:
 
 ```shell
-gcc example/server.c  -Lshared/lib -lcherver -o example/server
+gcc example/server.c -o example/server -Lshared/lib -lcherver
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ gcc example/server.c  -Lshared/lib -lcherver -o example/server
 1. Use the LD_LIBRARY_PATH environment variable to tell whre to locate the shared library
 
 ```shell
-export LD_LIBRARY_PATH="$(pwd)/shared/lib"
+export LD_LIBRARY_PATH="./shared/lib"
 ```
 
 2. Run the executable

@@ -7,7 +7,6 @@
 void handler (request req, response res){
     if(strcmp(req.url, "/") == 0) (res.write_head)(&res, 200);
     else (res.write_head)(&res, 404);
-    
 }
 
 int main(int argc, char **argv){

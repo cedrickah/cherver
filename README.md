@@ -1,6 +1,6 @@
 # Cherver
 
-A toy http server library. Tested on Debian 11.
+A toy http server library for Linux. Tested on Debian 11.
 
 ## Prerequisites
 
@@ -12,16 +12,13 @@ A toy http server library. Tested on Debian 11.
 1. Use `cmake` to configure and build.
 
 ```shell
-mkdir build
-cd build
-cmake ../src
-cmake --build .
+./build.sh
 ```
 
 2. Use `cmake` to install the library.
 
 ```shell
-cmake --install . --prefix "{{pwd}}/shared"
+./install.sh
 ```
 
 ## Usage
